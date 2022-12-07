@@ -125,9 +125,9 @@ function App() {
               <div className="level-three-text">
                 <h3>Enlaces Rápidos</h3>
                 <Link to="/color">Uso del color</Link>
-                <p>Contrast Ratio</p>
+                <Link to="/color/contrast-ratio">Contrast Ratio</Link>
                 <Link to="/tipografia">Tipografía</Link>
-                <p>Consulta de colores</p>
+                <Link to="/">Inicio</Link>
               </div>
               <div className="level-three-text">
                 <h3>Contacto</h3>

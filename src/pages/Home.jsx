@@ -43,9 +43,9 @@ export default function Home() {
             correcto del color para la deficiencia visual.
           </h4>
           <p>
-            Para el sector de personas con discromatopsia (Incapaz de distinguir
-            toda la gama cromatica). Para que el diseño tome encuenta a este
-            sector y se conozca como implementar estos métodos.
+            Tomando en cuenta a las personas que sufren de discromatopsia (la
+            cual es, la incapacidad de distinguir ciertas tonalidades de la gama
+            cromática).
           </p>
         </div>
 
@@ -157,16 +157,16 @@ export default function Home() {
             </p>
           </div>
           <div className="ishihara-content-svg">
-            <img src={circleOjo} className="circle-ojo"/>
-            <img src={mediaLunaOjo} className="media-luna-ojo"/>
+            <img src={circleOjo} className="circle-ojo" />
+            <img src={mediaLunaOjo} className="media-luna-ojo" />
           </div>
         </div>
       </div>
 
       {/* IMAGENES ISHIHARA */}
       <div className="ishihara-img1">
-          <img src={imgIshihara1} alt="Test de ishihara" />
-          <h3>Text de Ishihara</h3>
+        <img src={imgIshihara1} alt="Test de ishihara" />
+        <h3>Text de Ishihara</h3>
       </div>
       <div className="ishihara-img2and3">
         <div>
@@ -176,7 +176,6 @@ export default function Home() {
           <img src={imgIshihara3} alt="Test de ishihara" />
         </div>
       </div>
-
     </>
   );
 }
