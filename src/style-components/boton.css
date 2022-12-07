@@ -1,0 +1,18 @@
+.boton {
+    color: var(--c-darkCyan);
+    font-size: 1em;
+    background: var(--c-cyan);
+    max-width: 10em;
+    height: auto;
+    padding: 0.625em 3.125em;
+    border-radius: 0.9375em;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.boton:hover {
+    background: white;
+    padding: 0.650em 3.140em;
+    font-weight: var(--w-semiBold);    
+}
+

@@ -1,0 +1,343 @@
+.colorweb-content-one {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 9.375em;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.one-svg {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.colorweb-content-one-svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background: var(--c-turquiose); */
+}
+
+.svg1 {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  top: 8em;
+  left: 7em;
+  animation: movimiento1 5s alternate infinite;
+}
+
+.svg2 {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  top: 6em;
+  left: 5em;
+  animation: movimiento2 3s alternate infinite;
+}
+
+.svg3 {
+  position: absolute;
+  width: 8.5em;
+  height: 8.5em;
+  top: 4em;
+  left: 13em;
+}
+
+.svg4 {
+  position: absolute;
+  width: 8.5em;
+  height: 8.5em;
+  top: 13em;
+  left: 14em;
+  animation: movimiento1 4s alternate infinite;
+}
+
+.svg5 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  top: 7em;
+  left: 17em;
+  animation: movimiento-eye 6s alternate infinite;
+}
+
+.svg6 {
+  position: absolute;
+  width: 5.5em;
+  height: 5.5em;
+  top: 6em;
+  left: 24em;
+  animation: movimiento2 3s alternate infinite;
+}
+
+.svg7 {
+  position: absolute;
+  width: 8.5em;
+  height: 2.5em;
+  top: 17em;
+  left: 19em;
+  animation: movimiento1 3s alternate infinite;
+}
+
+.svg8 {
+  position: absolute;
+  width: 12em;
+  height: 5em;
+  top: 0em;
+  left: 12em;
+  animation: movimiento2 3s alternate infinite;
+}
+
+.svg9 {
+  position: absolute;
+  width: 8em;
+  height: 7em;
+  top: 11em;
+  left: 4em;
+  animation: movimiento1 3s alternate infinite;
+}
+
+.svg10 {
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  top: 8em;
+  left: 0em;
+  animation: movimiento2 5s alternate infinite;
+}
+
+@keyframes movimiento1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0px, 20px);
+  }
+}
+
+@keyframes movimiento2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0px, -20px);
+  }
+}
+
+@keyframes movimiento-eye {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, 0px);
+  }
+
+  100% {
+    transform: translate(-20px, 0px);
+  }
+}
+
+.colorweb-content-one-text h1 {
+  color: var(--c-turquiose);
+  font-size: var(--heading-1);
+}
+.colorweb-content-one-text p {
+  color: var(--c-white);
+  font-size: 1em;
+}
+
+/* Segundo contenido */
+.colorweb-content-two {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 3.125em;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.colorweb-content-two-text h2 {
+  color: var(--c-turquiose);
+  font-size: var(--heading-2);
+}
+
+.colorweb-content-two-text p {
+  color: var(--c-white);
+  font-weight: var(--w-regular);
+  font-size: 1em;
+  max-width: 460px;
+  margin-bottom: 50px;
+}
+
+.colorweb-content-two-forms {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.colorweb-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colorweb-forms h5 {
+  color: var(--c-white);
+  font-size: var(--heading-5);
+  font-weight: var(--w-medium);
+}
+
+.colorweb-forms div {
+  padding: 8px 8px;
+  border-radius: 15px;
+  background: var(--c-darkCyan);
+}
+
+.colorweb-forms div img {
+  width: 100%;
+}
+
+/* tercer contenido */
+.colorweb-content-three {
+  background: var(--c-turquiose);
+  padding-top: 5.25em;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 6.25em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.colorweb-content-three-text {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.colorweb-content-three-text h2 {
+  color: var(--c-darkCyan);
+  font-size: var(--heading-2);
+  font-weight: var(--w-bold);
+  margin-bottom: 1.125em;
+}
+.colorweb-content-three-text p {
+  color: var(--c-darkCyan);
+  font-size: 1em;
+  font-weight: var(--w-regular);
+  max-width: 460px;
+}
+.colorweb-content-three-text h3 {
+  color: var(--c-darkCyan);
+  font-size: var(--heading-3);
+  font-weight: var(--w-regular);
+  text-align: center;
+}
+.colorweb-content-three-text h3 span {
+  color: var(--c-darkCyan);
+  font-weight: var(--w-bold);
+}
+
+.normal-protanopia {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.colorweb-content-three-cards {
+  max-width: 560px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.cards-column {
+  height: auto;
+  display: grid;
+  gap: 1em;
+}
+
+.card-background-turquoise {
+  height: 12.5em;
+  width: 100%;
+  background: var(--c-cyan);
+  color: var(--c-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.card-background-dark {
+  height: 12.5em;
+  width: 100%;
+  background: var(--c-dark);
+  color: var(--c-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.colorweb-content-three-cards h2 {
+  font-size: 1em;
+}
+
+/* cuarto contenido */
+.colorweb-content-four {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1250px) {
+  .colorweb-content-one {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .colorweb-content-two {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .colorweb-content-three {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .colorweb-content-four {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .colorweb-content-one {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .colorweb-content-two {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .colorweb-content-three {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .colorweb-content-four {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

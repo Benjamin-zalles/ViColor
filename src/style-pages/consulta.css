@@ -1,0 +1,181 @@
+.checker-container-principal {
+    max-width: 1140px;
+    /* background: rgb(54, 54, 75); */
+    height: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 100px; */
+    display: flex;
+    gap: 50px;
+}
+
+.content-primary {
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.content-primary h1 {
+    color: var(--colour-tertiary);
+}
+
+.content-input-color {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-color {
+    width: 140px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #383838;
+    border-radius: 15px;
+}
+
+.input-color input[type="color"] {
+    border: none;
+    width: 200px;
+    height: 100px;
+    box-shadow: inset 0 0 0 7px #383838;
+}
+
+.input-color input[type="text"] {
+    border: none;
+    background-color: #383838;
+    border: solid 1px var(--colour-white);
+    color: var(--colour-white);
+    width: 100px;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.color-container {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: inset 0 0 0 7px #383838;
+}
+
+.content-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.content-options button {
+    background: var(--colour-tertiary);
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+.content-secundary {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: stretch;
+}
+
+
+.boxs-colors {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.types-colour-blind {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+
+.type-prota .result-prota {
+    width: 90px;
+    height: 80px;
+}
+
+
+.types-colour-blind .type-prota {
+    display: flex;
+}
+
+.types-colour-blind .type-prota h3 {
+    color: var(--colour-tertiary);
+    margin-right: 30px;
+    font-weight: var(--w-Regular);
+}
+
+
+
+.result-deuta {
+    width: 90px;
+    height: 80px;
+}
+
+.types-colour-blind .type-deuta {
+    display: flex;
+}
+
+.types-colour-blind .type-deuta h3 {
+    color: var(--colour-tertiary);
+    margin-right: 30px;
+    font-weight: var(--w-Regular);
+}
+
+
+
+
+.result-trita {
+    width: 90px;
+    height: 80px;
+}
+.types-colour-blind .type-trita {
+    display: flex;
+}
+
+.types-colour-blind .type-trita h3 {
+    color: var(--colour-tertiary);
+    margin-right: 30px;
+    font-weight: var(--w-Regular);
+}
+
+
+.result-acro {
+    width: 90px;
+    height: 80px;
+}
+.types-colour-blind .type-acro {
+    display: flex;
+}
+
+.types-colour-blind .type-acro h3 {
+    color: var(--colour-tertiary);
+    margin-right: 30px;
+    font-weight: var(--w-Regular);
+}
+
+
+
+
+
+
+
+
+
