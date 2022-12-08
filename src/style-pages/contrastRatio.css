@@ -1,15 +1,170 @@
 .colorWhite {
-    color: white;
+  color: white;
 }
 
 .colorBlack {
-    color: Black;
+  color: Black;
 }
 
-.title-input {
+/* .title-input {
     background: transparent;
     border: none;
+    outline: none;
+    font-size: var(--heading-3);
+    max-width: 500px;
+    height: 200px;
+} */
+
+.contrastRatio-content-one {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.contrastRatio-text-and-forms {
+  max-width: 500px;
+}
+
+.textarea {
+  display: table-row;
+  background: transparent;
+  font-size: var(--heading-2);
+  font-family: "Montserrat";
+  font-weight: var(--w-bold);
+  outline: none;
+  border: none;
+  height: 4.5em;
+  width: 400px;
+  resize: none;
+}
+
+.text-c-r {
+  margin-bottom: 50px;
+}
+.container-draw {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contrastRatio-forms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contrastRatio-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.25em;
+}
+.picker-r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.picker-fondo .react-colorful{
+    width: 200px;
+}
+
+.input-c {
+  background: transparent;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  font-size: 1.25em;
+  border-radius: 0.625em;
+  border: 1px solid black;
+  outline: none;
+}
+
+.borderBlack {
+  border: solid 1px black;
+}
+
+.borderWhite {
+  border: solid 1px white;
+}
+
+.t-c-r {
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-contrast {
+  width: 90%;
+  height: 100px;
+  font-size: var(--heading-5);
+}
+
+.calculo-num {
+  font-size: var(--heading-4);
+  font-weight: var(--w-bold);
+}
+
+/* segundo contenido */
+.contrastRatio-content-two {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.title-content-two-contrast {
+  font-size: var(--heading-3);
+  margin-bottom: 50px;
+}
+
+.explicacion-contrast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .contrastRatio-content-one {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contrastRatio-content-two {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  
 }
 
 
+@media screen and (max-width: 600px) {
+  .contrastRatio-content-one {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contrastRatio-content-two {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+  .picker-fondo .react-colorful {
+    width: 170px;
+    height: 170px;
+}
+
+.picker-texto .react-colorful {
+  width: 170px;
+  height: 170px;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .textarea {
+    width: 300px;
+  }
+}
