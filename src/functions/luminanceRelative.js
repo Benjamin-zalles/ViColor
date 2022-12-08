@@ -39,18 +39,8 @@ export default function calculateContrast(c1, c2) {
   const color2 = hexRgb(c1);
   const color1 = hexRgb(c2);
   const resultContrast = contrast(color1, color2);
-  const convertString = String(resultContrast);
 
-  function redondearPuntos(num) {
-    if (num[1] == ".") {
-      return num.slice(0, 4);
-    } else if (num[2] == ".") {
-      return num.slice(0, 5);
-    } else {
-      return num;
-    }
-  }
 
-  return redondearPuntos(convertString);
+  return resultContrast;
 }
 

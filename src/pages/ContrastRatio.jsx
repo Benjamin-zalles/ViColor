@@ -75,19 +75,33 @@ export default function ContrastRatio() {
   }
   cambiarBackgroundBody();
 
-  const checkColor = calculateContrast(color, color2);
-  const levelAANormal = (n) => {
-    if (n < "4.05") {
-      return "Fallo";
+  const checkColor = calculateContrast(color, color2); //numeros
+  const convertString = String(checkColor); // string
+
+  function redondearPuntos(num) {
+    if (num[1] == ".") {
+      return num.slice(0, 4);
+    } else if (num[2] == ".") {
+      return num.slice(0, 5);
     } else {
+      return num;
+    }
+  }
+  
+  console.log(redondearPuntos(convertString));
+
+  const levelAANormal = (n) => {
+    if (n < 4.05) {
+      return "Fallo";
+    } else if(n > 4.05) {
       return "Bien";
     }
   };
 
   const levelAALarge = (n) => {
-    if (n < "3") {
+    if (n < 3) {
       return "Fallo";
-    } else {
+    } else if(n > 3){
       return "Bien";
     }
   };
@@ -213,7 +227,7 @@ export default function ContrastRatio() {
                     }}
                   >
                     <div>
-                      <p className="calculo-num">{calculateContrast(color, color2)}</p>
+                      <p className="calculo-num">{redondearPuntos(convertString)}</p>
                       <p>{levelAALarge(checkColor)}</p>
                     </div>
                   </td>
@@ -226,7 +240,7 @@ export default function ContrastRatio() {
                     }}
                   >
                     <div>
-                      <p className="calculo-num">{calculateContrast(color, color2)}</p>
+                      <p className="calculo-num">{redondearPuntos(convertString)}</p>
                       <p>{levelAANormal(checkColor)}</p>
                     </div>
                   </td>
@@ -238,7 +252,7 @@ export default function ContrastRatio() {
                     }}
                   >
                     <div>
-                      <p className="calculo-num">{calculateContrast(color, color2)}</p>
+                      <p className="calculo-num">{redondearPuntos(convertString)}</p>
                       <p>{levelAANormal(checkColor)}</p>
                     </div>
                   </td>
