@@ -200,7 +200,21 @@ export default function ColorWeb() {
             polera={PoleraAzul}
             colorPolera='Azul'
           />
+        </div>
+      </div>
 
+      {/* SEXTO CONTENIDO */}
+      <div className="colorweb-content-six">
+        <div className="content-six-text">
+          <h3>Subraya enlaces </h3>
+          <p>La mayoría de las páginas webs al usar enlaces usan el color azul para identificarlo, un ejemplo de ello es Wikipedia.</p> <br/>
+
+          <p>Entonces, alguien con monocromía no podrá diferenciar entre el texto y el texto de un enlace en absoluto y tendría que desplazarse sobre el texto para ver si el cursor cambia a un puntero, lo cual hace que sea complicado la navegación por el sitio web.</p>
+        </div>
+        <div className="content-six-example">
+          <p>La <span className="sin-raya">retina</span> humana posee <span className="sin-raya">pigmentos</span> que permiten que los más diversos colores sean diferenciados por el ojo.</p>
+          <p>La retina humana posee pigmentos que permiten que los más diversos colores sean diferenciados por el ojo.</p>
+          <p>La <span className="con-raya">retina</span> humana posee <span className="con-raya">pigmentos</span> que permiten que los más diversos colores sean diferenciados por el ojo.</p>
         </div>
       </div>
     </>
