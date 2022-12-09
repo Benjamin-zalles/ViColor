@@ -294,6 +294,7 @@
 /* cuarto contenido */
 .colorweb-content-four {
   padding-top: 6.25em;
+  margin-bottom: 6.25em;
   margin-left: 200px;
   margin-right: 200px;
   display: grid;
@@ -339,6 +340,37 @@
   width: 100%;
 }
 
+/* Quinto contenido */
+.colorweb-content-five {
+  padding-top: 6.25em;
+  padding-bottom: 6.25em;
+  padding-left: 200px;
+  padding-right: 200px;
+  background: var(--c-turquiose);
+}
+
+.colorweb-content-five h3 {
+  font-size: var(--heading-3);
+  margin-bottom: 3.125rem;
+}
+
+.colorweb-content-five p {
+  max-width: 550px;
+  margin-bottom: 3.125em;
+}
+
+.content-poleras {
+  width: 100%;
+  height: auto;
+  background: #00ccdb;
+  border-radius: 15px;
+  box-shadow: 12px 13px 22px -1px rgba(0, 0, 0, 0.25);
+  padding: 1.25em 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1250px) {
   .colorweb-content-one {
@@ -359,6 +391,10 @@
   .colorweb-content-four {
     margin-left: 100px;
     margin-right: 100px;
+  }
+  .colorweb-content-five {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -381,5 +417,9 @@
   .colorweb-content-four {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .colorweb-content-five {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

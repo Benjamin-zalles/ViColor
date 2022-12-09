@@ -2,6 +2,7 @@ import "../style-pages/colorweb.css";
 
 // Import components
 import Boton from "../components/Boton";
+import CardPolera from "../components/CardsPoleras";
 
 //Import svg
 import visionNormal from "../assets/color/vision-normal.svg";
@@ -19,6 +20,9 @@ import line2 from "../assets/color/line.svg";
 import medioArco2 from "../assets/color/medio-arco.svg";
 import trianguloStroke2 from "../assets/color/triangulo-stroke.svg";
 import triangulo2 from "../assets/color/triangulo.svg";
+import PoleraRoja from '../assets/color/Polera-roja.svg';
+import PoleraVerde from '../assets/color/Polera-verde.svg';
+import PoleraAzul from '../assets/color/Polera-azul.svg';
 
 // Import imagenes
 import relacionDeContraste from "../img/relacion-de-contraste.png";
@@ -176,6 +180,27 @@ export default function ColorWeb() {
             aplicar con cualquier color, no solamente con escala de grises.
           </p>
           <Boton direction="contrast-ratio" />
+        </div>
+      </div>
+
+      {/*   quinto contenido */}
+      <div className="colorweb-content-five">
+        <h3>Etiqueta de colores </h3>
+        <p>Que pasa cuando se requiere el color en ciertas tomas de decisión del usuario, pero justo nuestro visitante tiene daltonismo. Existen formas descriptivas muy simples para que esto sea capaz, como por ejemplo en un e-commerce o compra por internet, solo hace falta describir el color del producto.</p>
+        <div className="content-poleras">
+          <CardPolera
+            polera={PoleraRoja}
+            colorPolera='Roja'
+          />
+          <CardPolera
+            polera={PoleraVerde}
+            colorPolera='Verde'
+          />
+          <CardPolera
+            polera={PoleraAzul}
+            colorPolera='Azul'
+          />
+
         </div>
       </div>
     </>
