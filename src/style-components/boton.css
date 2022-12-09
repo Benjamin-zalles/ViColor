@@ -4,15 +4,17 @@
     background: var(--c-cyan);
     max-width: 10em;
     height: auto;
-    padding: 0.625em 3.125em;
+    padding: 0.625em 2.5em;
     border-radius: 0.9375em;
     text-decoration: none;
+    text-align: center;
     transition: background-color 0.5s ease;
 }
 
 .boton:hover {
     background: white;
-    padding: 0.650em 3.140em;
+    padding: 0.650em 2.5em;
+    text-align: center;
     font-weight: var(--w-semiBold);    
 }
 

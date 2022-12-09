@@ -158,13 +158,13 @@ export default function ColorWeb() {
             Según la WCAG el nivel AAA requiere una relación de contraste de al
             menos 7:1 para texto normal y 4,5:1 para texto grande.
           </p>
-          {/* <img src={relacionDeContraste} alt="escala de contraste" /> */}
+          <img src={relacionDeContraste} alt="escala de contraste" />
         </div>
         <div className="colorweb-content-four-two">
-          {/* <img src={formula} alt="formula luminancia relativa" width="500px" /> */}
+          <img src={formula} alt="formula luminancia relativa"/>
           <p>
             En palabras simples según la{" "}
-            <a
+            <a className="enlace-w3"
               href="https://www.w3.org/TR/WCAG20/#contrast-ratiodef"
               target="_blank"
             >

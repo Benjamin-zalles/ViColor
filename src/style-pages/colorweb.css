@@ -293,8 +293,50 @@
 
 /* cuarto contenido */
 .colorweb-content-four {
+  padding-top: 6.25em;
   margin-left: 200px;
   margin-right: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.colorweb-content-four-one {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.colorweb-content-four-one h2 {
+  color: var(--c-turquiose);
+  font-size: var(--heading-2);
+}
+
+.colorweb-content-four-one p {
+  font-size: 1em;
+  color: var(--c-white);
+}
+
+.colorweb-content-four-one img {
+  width: 100%;
+}
+
+.colorweb-content-four-two {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.colorweb-content-four-two p {
+  color: var(--c-white);
+}
+
+.colorweb-content-four-two .enlace-w3 {
+  color: var(--c-turquiose);
+}
+
+.colorweb-content-four-two img {
+  width: 100%;
 }
 
 /* RESPONSIVE */
