@@ -1,8 +1,8 @@
 .tipografia-content-one {
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 9.375em;
-  margin-bottom: 6.25em;
+  margin-top: 10em;
+  margin-bottom: 7.40em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* height: auto; */
@@ -112,6 +112,11 @@
   gap: 20px;
 }
 
+.tipografia-p-2 a {
+  color: #00EFD8;
+  text-align: center;
+}
+
 .tipografia-two-text-large {
   display: flex;
   flex-direction: column;
@@ -128,24 +133,24 @@
 }
 
 /* TERCER CONTENIDO */
-.tipografia-three-text {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-}
 
 .tipografia-content-three {
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 6.25em;
-  margin-bottom: 50px;
+  margin-bottom: 3.125em;
 }
 
+.tipografia-three-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4.125em;
+}
 .tipografia-content-three h1 {
   font-size: var(--heading-3);
   color: var(--c-turquiose);
-  margin-bottom: 3.125em;
+  margin-bottom: 1em;
 }
 
 .t-t-1 {
@@ -157,7 +162,6 @@
   text-align: left;
   display: flex;
   border-radius: 0.9375em;
-  border: solid .5px var(--c-turquiose);
   justify-content: center;
   align-items: center;
   padding: 0.625em 3.125em;
@@ -178,7 +182,7 @@
 .tipografia-content-four {
   margin-left: 200px;
   margin-right: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 10em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -193,6 +197,7 @@
 .fallo-contraste-text h3 {
   color: var(--c-turquiose);
   font-size: var(--heading-3);
+  margin-bottom: 1em;
 }
 
 .fallo-contraste-text p {
@@ -379,6 +384,10 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .tipografia-three-text{
+    gap: 10px;
+  }
   .tipografia-content-four {
     margin-left: 20px;
     margin-right: 20px;
@@ -392,6 +401,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   }
+
+  .interletrado {
+    letter-spacing: 0.10rem;
+    font-size: .8rem;
+  }
+
+  .mayusculas {
+    font-size: 1rem;
+    font-weight: var(--w-bold);
+  }
+  
+
+  
 }
 
 @media screen and (max-width: 450px) {

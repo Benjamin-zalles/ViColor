@@ -115,6 +115,17 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+.footer a {
+  color: var(--c-darkCyan);
+  transition: all 0.3s 0s ease;
+  
+}
+
+.footer a:hover {
+  color: rgb(33, 33, 145);
+  font-weight: var(--w-semiBold);
+}
+
 .fadeIn {
   animation: 0.5s fadeIn forwards;
 }

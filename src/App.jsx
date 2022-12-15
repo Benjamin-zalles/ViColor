@@ -130,12 +130,17 @@ function App() {
           }}
         >
           <Routes location={displayLocation}>
-            <Route index element={<Home 
-            fun1={() => setModal1(!modal1)} 
-            fun2={() => setModal2(!modal2)}
-            fun3={() => setModal3(!modal3)}
-            fun4={() => setModal4(!modal4)}
-            />} />
+            <Route
+              index
+              element={
+                <Home
+                  fun1={() => setModal1(!modal1)}
+                  fun2={() => setModal2(!modal2)}
+                  fun3={() => setModal3(!modal3)}
+                  fun4={() => setModal4(!modal4)}
+                />
+              }
+            />
             <Route path="/" element={<Home />} />
             <Route path="/color" element={<Color />}>
               <Route index element={<ColorWeb />} />
@@ -145,8 +150,6 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
-
-        <button onClick={() => setModal1(!modal1)}>click!!!!</button>
 
         <footer className="footer">
           <div className="level-content-one">

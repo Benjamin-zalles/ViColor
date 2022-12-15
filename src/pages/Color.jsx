@@ -12,14 +12,14 @@ export default function Color() {
       <div className="header-colors">
         <NavLink
           to="/color"
-          className={({ isActive }) => (isActive ? "enlaceActivo" : "")}
+          className={({ isActive }) => (isActive ? "enlaceActivo" : "enlaceNoActivo1")}
           end
         >
           <span className="cambiar-color2">Color en la web</span>
         </NavLink>
         <NavLink
           to="contrast-ratio"
-          className={({ isActive }) => (isActive ? "enlaceActivo" : "")}
+          className={({ isActive }) => (isActive ? "enlaceActivo" : "enlaceNoActivo2")}
         >
           <span className="cambiar-color3">Contrast ratio</span>
         </NavLink>
