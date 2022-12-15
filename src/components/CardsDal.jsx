@@ -1,7 +1,12 @@
 import "../style-components/cardBlind.css";
 import { useState } from "react";
+import styled from "styled-components";
 
-export default function CardsDal({ typeBlind, imgType }) {
+export default function CardsDal({
+  typeBlind,
+  imgType,
+  clickModal,
+}) {
   const [mostrarElement, setMostrarElement] = useState(false);
 
   const mostrar = () => {
@@ -19,8 +24,12 @@ export default function CardsDal({ typeBlind, imgType }) {
         <h2 className={mostrar()}>{typeBlind}</h2>
       </div>
       <div className="card-button">
-        <button type="button">Ver más</button>
+        <BotonDal onClick={clickModal}>Ver más</BotonDal>
       </div>
     </div>
   );
 }
+
+const BotonDal = styled.button`
+  cursor: pointer;
+`;
