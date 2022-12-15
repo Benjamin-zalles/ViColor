@@ -160,7 +160,7 @@ export default function ColorWeb() {
               poco o casi nada.
             </p>
           </div>
-          <div>
+          <div className="content__roja-verde">
             <h3>
               Habitualmente, <span>la COMBINACIÓN</span> de colores más crítica
               es la <span>ROJA y VERDE.</span>
@@ -168,11 +168,19 @@ export default function ColorWeb() {
             <div className="normal-protanopia">
               <div>
                 <h5>Normal</h5>
-                <img src={modoNormal} alt="modo normal" />
+                <img src={modoNormal} alt="modo normal" 
+                  style={{
+                    width: '80%'
+                  }}
+                />
               </div>
               <div>
                 <h5>Protanopía</h5>
-                <img src={modoProta} alt="modo protanopía" />
+                <img src={modoProta} alt="modo protanopía" 
+                  style={{
+                    width: '80%',
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -180,25 +188,25 @@ export default function ColorWeb() {
         {/* cards */}
         <div className="colorweb-content-three-cards">
           <div className="cards-column">
-            <div className="card-background-turquoise">
+            <div className="card-background-turquoise card__uno">
               <h2>ROJO Y VERDE</h2>
             </div>
-            <div className="card-background-dark">
-              <h2>ROJO Y VERDE</h2>
+            <div className="card-background-dark card__dos">
+              <h2>VERDE Y NARANJA</h2>
             </div>
-            <div className="card-background-turquoise">
-              <h2>ROJO Y VERDE</h2>
+            <div className="card-background-turquoise card__tres">
+              <h2>AMARILLO Y VERDE LIMA</h2>
             </div>
           </div>
           <div className="cards-column">
-            <div className="card-background-dark">
+            <div className="card-background-dark card__cuatro">
               <h2>AZUL Y MORADO</h2>
             </div>
-            <div className="card-background-turquoise">
-              <h2>AZUL Y MORADO</h2>
+            <div className="card-background-turquoise card__cinco">
+              <h2>VERDE Y MARRON</h2>
             </div>
-            <div className="card-background-dark">
-              <h2>AZUL Y MORADO</h2>
+            <div className="card-background-dark card__seis">
+              <h2>ROJO Y MARRON</h2>
             </div>
           </div>
         </div>
