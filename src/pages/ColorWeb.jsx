@@ -7,6 +7,7 @@ import BlindColor from "../functions/blind";
 // import Tippy from "@tippyjs/react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import { FaExclamationCircle } from "react-icons/fa";
 
 // Import components
 import Boton from "../components/Boton";
@@ -168,17 +169,21 @@ export default function ColorWeb() {
             <div className="normal-protanopia">
               <div>
                 <h5>Normal</h5>
-                <img src={modoNormal} alt="modo normal" 
+                <img
+                  src={modoNormal}
+                  alt="modo normal"
                   style={{
-                    width: '80%'
+                    width: "80%",
                   }}
                 />
               </div>
               <div>
                 <h5>Protanopía</h5>
-                <img src={modoProta} alt="modo protanopía" 
+                <img
+                  src={modoProta}
+                  alt="modo protanopía"
                   style={{
-                    width: '80%',
+                    width: "80%",
                   }}
                 />
               </div>
@@ -230,14 +235,14 @@ export default function ColorWeb() {
         <div className="colorweb-content-four-two">
           <img src={formula} alt="formula luminancia relativa" />
           <p>
-            En palabras simples según la{" "}
+            En palabras simples según la
             <a
               className="enlace-w3"
               href="https://www.w3.org/TR/WCAG20/#contrast-ratiodef"
               target="_blank"
             >
               w3.org
-            </a>{" "}
+            </a>
             se calcula utilizando la luminancia relativa de los colores, en
             términos simples el negro más oscuro tiene una luminancia relativa
             de 0 y el blanco tiene una luminancia relativa de 1 y esto se puede
@@ -249,7 +254,7 @@ export default function ColorWeb() {
 
       {/*   quinto contenido */}
       <div className="colorweb-content-five">
-        <h3>Etiqueta de colores </h3>
+        <h3>Etiqueta de colores</h3>
         <p>
           Que pasa cuando se requiere el color en ciertas tomas de decisión del
           usuario, pero justo nuestro visitante tiene daltonismo. Existen formas
@@ -270,7 +275,16 @@ export default function ColorWeb() {
           <h3>Subraya enlaces </h3>
           <p>
             La mayoría de las páginas webs al usar enlaces usan el color azul
-            para identificarlo, un ejemplo de ello es <a href="https://es.wikipedia.org/" target="_blank">Wikipedia</a>
+            para identificarlo, un ejemplo de ello es{" "}
+            <a
+              href="https://es.wikipedia.org/"
+              target="_blank"
+              style={{
+                color: "#14474B",
+              }}
+            >
+              Wikipedia
+            </a>
           </p>
           <br />
           <p>
@@ -300,6 +314,30 @@ export default function ColorWeb() {
       </div>
 
       {/* SEPTIMO CONTENIDO */}
+      {/* <div className="colorweb-content-seven">
+        <div className="colorweb-seven-filtro">
+          <div className="filtro-colores">colores</div>
+          <div className="filtro-colores-text">
+            <h3>Filtro de colores</h3>
+            <p>Incluso se puede optar por un filtro de colores para visualizar algun producto o estilo de contenido como imagenes por ejemplo.</p>
+          </div>
+        </div>
+        <div className="filtro-seven-info">
+          <h3>No solo usar el color como medio de información</h3>
+          <p>Muchos usan el color como único medio visual para transmitir información, lo cual puede ocasionar problemas no solo en personas con daltonismo, incluso en personas que no saben el significado de los colores. </p>
+
+          <p>Por tanto, siempre debería existir un indicador (como un icono, un texto descriptivo) para que las personas que no pueden distinguir bien los colores también puedan comprender la acción.</p>
+
+          <div>
+            <p>Corro Electronico</p>
+            <input type="text" placeholder="Ingresa tu Email"/>
+            <div>
+              <FaExclamationCircle/>
+              <p>Todos los campos son obligatorios</p>
+            </div>
+          </div>
+        </div>
+      </div> */}
 
       {/* OCTAVO CONTENIDO */}
       <div className="colorweb-content-eight">

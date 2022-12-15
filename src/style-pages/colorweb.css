@@ -249,7 +249,7 @@
   font-weight: var(--w-bold);
 }
 
-.content__roja-verde{
+.content__roja-verde {
   display: flex;
   flex-direction: column;
   gap: 1.25em;
@@ -295,17 +295,17 @@
   color: #d4681c;
 }
 
-.card__tres:hover{
+.card__tres:hover {
   background: #e9f018;
   color: #a0f000;
 }
 
-.card__cuatro:hover{
+.card__cuatro:hover {
   background: #0431c7;
   color: #8818de;
 }
 
-.card__cinco:hover{
+.card__cinco:hover {
   background: #8f5004;
   color: #00cf15;
 }
@@ -456,6 +456,22 @@
 }
 
 /* SEPTIMO CONTENIDO */
+.colorweb-content-seven {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.colorweb-seven-filtro .filtro-colores-text h3{
+  color: var(--c-turquiose);
+  font-size: var(--heading-2);
+}
+
+.colorweb-seven-filtro .filtro-colores-text p{
+  color: var(--c-white);
+  font-size: 1em;
+}
 
 /* OCTAVO CONTENIDO */
 .colorweb-content-eight {
@@ -480,7 +496,6 @@
   font-size: 1em;
 }
 
-
 .colorweb-eight-colors {
   display: flex;
   flex-direction: column;
@@ -495,17 +510,16 @@
   cursor: pointer;
 }
 
-
-.colorweb-eight-colors-btn{
+.colorweb-eight-colors-btn {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-.colorweb-eight-colors-btn button{
+.colorweb-eight-colors-btn button {
   width: 8.375em;
-  background: #00CCDB;
-  color: #2D2D2D;
+  background: #00ccdb;
+  color: #2d2d2d;
   border: none;
   padding: 10px 15px;
   border-radius: 10px;
@@ -514,7 +528,7 @@
 }
 
 .colorweb-eight-colors-btn button:hover {
-  transform: translateY(-5px)
+  transform: translateY(-5px);
 }
 
 /* RESPONSIVE */
@@ -545,6 +559,11 @@
   .colorweb-content-six {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .colorweb-content-seven {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .colorweb-content-eight {
@@ -581,6 +600,11 @@
   .colorweb-content-six {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .colorweb-content-seven {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .colorweb-content-eight {

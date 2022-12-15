@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../style-pages/contrastRatio.css";
 import calculateContrast from "../functions/luminanceRelative";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import styled from 'styled-components'
+import styled from "styled-components";
 
 import {
   FaApple,
@@ -64,7 +64,7 @@ export function calculateColorBlack0rWhite(co) {
   return colorWhiteOrBlack;
 }
 
-export default function ContrastRatio({funCopy}) {
+export default function ContrastRatio({ funCopy }) {
   const [color, setColor] = useState("#00EFD8"); //#2D2D2D
   const [color2, setColor2] = useState("#14474B");
   const [texto, setTexto] = useState("Escribe tu propio título aquí");
@@ -96,9 +96,9 @@ export default function ContrastRatio({funCopy}) {
   // console.log(redondearPuntos(convertString));
 
   const levelAANormal = (n) => {
-    if (n < 4.50) {
+    if (n < 4.5) {
       return "Fallo";
-    } else if (n > 4.50) {
+    } else if (n > 4.5) {
       return "Bien";
     }
   };
@@ -116,10 +116,8 @@ export default function ContrastRatio({funCopy}) {
       ? "boderBlack"
       : "borderWhite";
 
-
   return (
     <>
-      
       <div className="contrastRatio-content-one">
         <div className="contrastRatio-text-and-forms">
           <div className="text-c-r">
@@ -176,9 +174,13 @@ export default function ContrastRatio({funCopy}) {
                 )} ${borderInputColor}`}
               />
               <CopyToClipboard text={color}>
-                  <BtnCopy onClick={funCopy}><BiCopy size="30px" className={calculateColorBlack0rWhite(color)}/></BtnCopy>
+                <BtnCopy onClick={funCopy}>
+                  <BiCopy
+                    size="30px"
+                    className={calculateColorBlack0rWhite(color)}
+                  />
+                </BtnCopy>
               </CopyToClipboard>
-              
             </div>
             <div className="picker-texto picker-r">
               <div>
@@ -193,7 +195,12 @@ export default function ContrastRatio({funCopy}) {
                 )} ${borderInputColor}`}
               />
               <CopyToClipboard text={color2}>
-                  <BtnCopy onClick={funCopy}><BiCopy size="30px" className={calculateColorBlack0rWhite(color)}/></BtnCopy>
+                <BtnCopy onClick={funCopy}>
+                  <BiCopy
+                    size="30px"
+                    className={calculateColorBlack0rWhite(color)}
+                  />
+                </BtnCopy>
               </CopyToClipboard>
             </div>
           </div>
@@ -292,7 +299,7 @@ export default function ContrastRatio({funCopy}) {
       <div className="contrastRatio-content-two">
         <div className="title-content-two-contrast">
           <h3 className={calculateColorBlack0rWhite(color)}>
-            Criterio de conformindad realacionado con la WCAG
+            Criterios de conformidad relacionados con WCAG
           </h3>
         </div>
         <div className="explicacion-contrast">
@@ -302,15 +309,16 @@ export default function ContrastRatio({funCopy}) {
               El contraste de color entre el fondo y el contenido del primer
               plano debe tener un nivel mínimo para garantizar la legibilidad
             </p>
-            <p>
+            <br/>
+            <li>
               El texto y el fondo deben tener una relación de contraste de al
               menos 4.5:1. para texto normal (17pt e inferior)
-            </p>
-
-            <p>
+            </li>
+            <br/>
+            <li>
               deben tener una relación de contraste de al menos 3:1. El texto
               más grande se define como de al menos 18pt
-            </p>
+            </li>
           </div>
           <div className={calculateColorBlack0rWhite(color)}>
             <h3>Nivel AAA</h3>
@@ -318,21 +326,22 @@ export default function ContrastRatio({funCopy}) {
               El contraste de color se basa en el criterio 1.4.3 que es la
               versión mejorada del nivel AA.
             </p>
-            <p>
+            <br/>
+            <li>
               El texto y el fondo deben tener una relación de contraste de al
               menos 7:1 para texto normal (17pt e inferior)
-            </p>
-            <p>
+            </li>
+            <br/>
+            <li>
               Para texto grande (18pt y superior) deben tener una relación de
               contraste de al menos 4.5:1.
-            </p>
+            </li>
           </div>
         </div>
       </div>
     </>
   );
 }
-
 
 const BtnCopy = styled.button`
   background: transparent;
@@ -346,6 +355,6 @@ const BtnCopy = styled.button`
   }
 
   &:active {
-    background: #00EFD8;
+    background: #00efd8;
   }
-`
+`;
