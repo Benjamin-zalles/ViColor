@@ -122,7 +122,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer a:hover {
-  color: rgb(33, 33, 145);
   font-weight: var(--w-semiBold);
 }
 

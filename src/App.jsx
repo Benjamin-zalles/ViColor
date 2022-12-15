@@ -16,6 +16,8 @@ import whatsapp from "../src/assets/whatsapp.svg";
 import instagram from "../src/assets/instagram.svg";
 import vicolorFooter from "../src/assets/vicolor-footer.svg";
 
+import toast, { Toaster } from 'react-hot-toast';
+
 // Import imagenes
 import lapizAcro from "./assets/home/lapiz-acro.png";
 import lapizProta from "./assets/home/lapiz-prota.png";
@@ -27,6 +29,8 @@ import palettAcro from "./assets/home/palett-acro.svg";
 import palettProta from "./assets/home/palett-prota.svg";
 import palettDeuta from "./assets/home/palett-deuta.svg";
 import palettTrita from "./assets/home/palett-trita.svg";
+
+import { FaCheckCircle } from "react-icons/fa";
 
 function App() {
   const [clicked, setClicked] = useState(false);
@@ -57,6 +61,9 @@ function App() {
 
   return (
     <>
+    <Toaster
+      position='bottom-center'
+    />
       <div className="App">
         <header className="header" id="header">
           <h1>ViColor</h1>
@@ -144,7 +151,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/color" element={<Color />}>
               <Route index element={<ColorWeb />} />
-              <Route path="contrast-ratio" element={<ContrastRatio />} />
+              <Route path="contrast-ratio" element={<ContrastRatio
+              
+                funCopy={() => toast(`Color Copiado`, {icon: <FaCheckCircle size='30px' color='green'/>, style: {fontSize: '12px'}})}
+                // () => toast("Texto Copiado", {position: 'bottom-right'})
+              />} />
             </Route>
             <Route path="/tipografia" element={<Tipografia />} />
             <Route path="*" element={<NotFoundPage />} />

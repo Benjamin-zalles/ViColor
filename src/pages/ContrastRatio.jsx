@@ -2,6 +2,8 @@ import { HexColorPicker } from "react-colorful";
 import { useState } from "react";
 import "../style-pages/contrastRatio.css";
 import calculateContrast from "../functions/luminanceRelative";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import styled from 'styled-components'
 
 import {
   FaApple,
@@ -15,6 +17,9 @@ import {
   FaSpinner,
   FaBacon,
 } from "react-icons/fa";
+import { BiCopy } from "react-icons/bi";
+
+// BiCopy
 
 export function calculateColorBlack0rWhite(co) {
   const net = new brain.NeuralNetwork();
@@ -59,7 +64,7 @@ export function calculateColorBlack0rWhite(co) {
   return colorWhiteOrBlack;
 }
 
-export default function ContrastRatio() {
+export default function ContrastRatio({funCopy}) {
   const [color, setColor] = useState("#00EFD8"); //#2D2D2D
   const [color2, setColor2] = useState("#14474B");
   const [texto, setTexto] = useState("Escribe tu propio título aquí");
@@ -87,13 +92,13 @@ export default function ContrastRatio() {
       return num;
     }
   }
-  
-  console.log(redondearPuntos(convertString));
+
+  // console.log(redondearPuntos(convertString));
 
   const levelAANormal = (n) => {
-    if (n < 4.05) {
+    if (n < 4.50) {
       return "Fallo";
-    } else if(n > 4.05) {
+    } else if (n > 4.50) {
       return "Bien";
     }
   };
@@ -101,17 +106,20 @@ export default function ContrastRatio() {
   const levelAALarge = (n) => {
     if (n < 3) {
       return "Fallo";
-    } else if(n > 3){
+    } else if (n > 3) {
       return "Bien";
     }
   };
 
-  const borderInputColor = calculateColorBlack0rWhite(color) === 'colorBlack' ? 'boderBlack' : 'borderWhite'
-
+  const borderInputColor =
+    calculateColorBlack0rWhite(color) === "colorBlack"
+      ? "boderBlack"
+      : "borderWhite";
 
 
   return (
     <>
+      
       <div className="contrastRatio-content-one">
         <div className="contrastRatio-text-and-forms">
           <div className="text-c-r">
@@ -158,13 +166,19 @@ export default function ContrastRatio() {
             <div className="picker-fondo picker-r">
               <div>
                 <h2 className={calculateColorBlack0rWhite(color)}>Fondo</h2>
-                <HexColorPicker color={color} onChange={setColor}/>
+                <HexColorPicker color={color} onChange={setColor} />
               </div>
               <input
                 onChange={(e) => setColor(e.target.value)}
                 value={color}
-                className={`input-c ${calculateColorBlack0rWhite(color)} ${borderInputColor}`}
+                className={`input-c ${calculateColorBlack0rWhite(
+                  color
+                )} ${borderInputColor}`}
               />
+              <CopyToClipboard text={color}>
+                  <BtnCopy onClick={funCopy}><BiCopy size="30px" className={calculateColorBlack0rWhite(color)}/></BtnCopy>
+              </CopyToClipboard>
+              
             </div>
             <div className="picker-texto picker-r">
               <div>
@@ -174,8 +188,13 @@ export default function ContrastRatio() {
               <input
                 onChange={(e) => setColor2(e.target.value)}
                 value={color2}
-                className={`input-c ${calculateColorBlack0rWhite(color)} ${borderInputColor}`}
+                className={`input-c ${calculateColorBlack0rWhite(
+                  color
+                )} ${borderInputColor}`}
               />
+              <CopyToClipboard text={color2}>
+                  <BtnCopy onClick={funCopy}><BiCopy size="30px" className={calculateColorBlack0rWhite(color)}/></BtnCopy>
+              </CopyToClipboard>
             </div>
           </div>
 
@@ -195,7 +214,7 @@ export default function ContrastRatio() {
                   <th
                     style={{
                       border: "1px solid",
-                      height: "50px"
+                      height: "50px",
                     }}
                   >
                     Título
@@ -227,7 +246,9 @@ export default function ContrastRatio() {
                     }}
                   >
                     <div>
-                      <p className="calculo-num">{redondearPuntos(convertString)}</p>
+                      <p className="calculo-num">
+                        {redondearPuntos(convertString)}
+                      </p>
                       <p>{levelAALarge(checkColor)}</p>
                     </div>
                   </td>
@@ -236,15 +257,18 @@ export default function ContrastRatio() {
                     style={{
                       border: "1px solid",
                       textAlign: "center",
-                      width: "30%"
+                      width: "30%",
                     }}
                   >
                     <div>
-                      <p className="calculo-num">{redondearPuntos(convertString)}</p>
+                      <p className="calculo-num">
+                        {redondearPuntos(convertString)}
+                      </p>
                       <p>{levelAANormal(checkColor)}</p>
                     </div>
                   </td>
-                  <td className={calculateColorBlack0rWhite(color)}
+                  <td
+                    className={calculateColorBlack0rWhite(color)}
                     style={{
                       border: "1px solid",
                       textAlign: "center",
@@ -252,7 +276,9 @@ export default function ContrastRatio() {
                     }}
                   >
                     <div>
-                      <p className="calculo-num">{redondearPuntos(convertString)}</p>
+                      <p className="calculo-num">
+                        {redondearPuntos(convertString)}
+                      </p>
                       <p>{levelAANormal(checkColor)}</p>
                     </div>
                   </td>
@@ -306,3 +332,20 @@ export default function ContrastRatio() {
     </>
   );
 }
+
+
+const BtnCopy = styled.button`
+  background: transparent;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+
+  &:hover {
+    background: rgba(191, 191, 191, 0.1);
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #00EFD8;
+  }
+`

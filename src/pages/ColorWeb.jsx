@@ -270,8 +270,8 @@ export default function ColorWeb() {
           <h3>Subraya enlaces </h3>
           <p>
             La mayoría de las páginas webs al usar enlaces usan el color azul
-            para identificarlo, un ejemplo de ello es Wikipedia.
-          </p>{" "}
+            para identificarlo, un ejemplo de ello es <a href="https://es.wikipedia.org/" target="_blank">Wikipedia</a>
+          </p>
           <br />
           <p>
             Entonces, alguien con monocromía no podrá diferenciar entre el texto
@@ -281,17 +281,18 @@ export default function ColorWeb() {
           </p>
         </div>
         <div className="content-six-example">
+          <h4>Visión Normal</h4>
           <p>
-            La <span className="sin-raya">retina</span> humana posee{" "}
             <span className="sin-raya">pigmentos</span> que permiten que los más
             diversos colores sean diferenciados por el ojo.
           </p>
+          <h4>Visión con monocromía</h4>
           <p>
             La retina humana posee pigmentos que permiten que los más diversos
             colores sean diferenciados por el ojo.
           </p>
+          <h4>Enlaces óptimos</h4>
           <p>
-            La <span className="con-raya">retina</span> humana posee{" "}
             <span className="con-raya">pigmentos</span> que permiten que los más
             diversos colores sean diferenciados por el ojo.
           </p>

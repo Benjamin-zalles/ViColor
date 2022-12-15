@@ -108,9 +108,9 @@ export default function Home({ fun1, fun2, fun3, fun4 }) {
           <h1>Tipos de daltonismo</h1>
           {/* <h1>{fun}</h1> */}
           <p>
-            Afecta a la discriminación de tonos de manera similar a la
-            protanopia, pero sin el efecto de atenuación. Una vez más, se
-            encuentra en aproximadamente el 10% de la población masculina.
+            Existen distintos tipos de daltonismo y grados de daltonismo, los
+            cuales se clasifican en función de las células y, consecuentemente,
+            el color daltónico afectado.
           </p>
           <div className="arrows">
             <RiArrowDropDownLine
