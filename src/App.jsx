@@ -201,7 +201,7 @@ function App() {
           cambiarEstado={setModal1}
           imgDal={lapizAcro}
           title="Acromatismo"
-          parrafo="No cuenta con ninguna ausencia el los tres tipos de conos que el ojo humano requiere esto explica su capacidad de detectar las distintas longitudes de onda de luz, produciendo visión a color."
+          parrafo="Cuenta con la ausencia de los tres tipos de conos que el ojo humano requiere para ver a color, esto explica su imposibilidad de detectar las distintas longitudes de onda de luz, produciendoles una visión a blanco y negro."
           colorAusente="VERDE ROJO AZUL"
           palettColor={palettAcro}
         />

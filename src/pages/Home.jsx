@@ -191,7 +191,7 @@ export default function Home({ fun1, fun2, fun3, fun4 }) {
         {/* IMAGENES ISHIHARA */}
         <div className="ishihara-img1">
           <img src={imgIshihara1} alt="Test de ishihara" />
-          <h3>Text de Ishihara</h3>
+          <h3>Test de Ishihara</h3>
         </div>
         <div className="ishihara-img2and3">
           <div>
