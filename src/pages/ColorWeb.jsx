@@ -32,6 +32,7 @@ import triangulo2 from "../assets/color/triangulo.svg";
 import PoleraRoja from "../assets/color/Polera-roja.svg";
 import PoleraVerde from "../assets/color/Polera-verde.svg";
 import PoleraAzul from "../assets/color/Polera-azul.svg";
+import Filtro from '../assets/color/filtro.svg';
 
 // Import imagenes
 import relacionDeContraste from "../img/relacion-de-contraste.png";
@@ -314,9 +315,13 @@ export default function ColorWeb() {
       </div>
 
       {/* SEPTIMO CONTENIDO */}
-      {/* <div className="colorweb-content-seven">
+      <div className="colorweb-content-seven">
         <div className="colorweb-seven-filtro">
-          <div className="filtro-colores">colores</div>
+          <div className="filtro-colores">
+            <img src={Filtro} style={{
+              width: '100%',
+            }}/>
+          </div>
           <div className="filtro-colores-text">
             <h3>Filtro de colores</h3>
             <p>Incluso se puede optar por un filtro de colores para visualizar algun producto o estilo de contenido como imagenes por ejemplo.</p>
@@ -324,20 +329,28 @@ export default function ColorWeb() {
         </div>
         <div className="filtro-seven-info">
           <h3>No solo usar el color como medio de información</h3>
-          <p>Muchos usan el color como único medio visual para transmitir información, lo cual puede ocasionar problemas no solo en personas con daltonismo, incluso en personas que no saben el significado de los colores. </p>
+          <p>Muchos usan el color como único medio visual para transmitir información, lo cual puede ocasionar problemas no solo en personas con daltonismo, incluso en personas que no saben el significado de los colores. </p> <br/>
 
-          <p>Por tanto, siempre debería existir un indicador (como un icono, un texto descriptivo) para que las personas que no pueden distinguir bien los colores también puedan comprender la acción.</p>
+          <p>Por tanto, siempre debería existir un indicador (como un icono, un texto descriptivo) para que las personas que no pueden distinguir bien los colores también puedan comprender la acción.</p> <br/>
 
-          <div>
+          <div className="input-content-seven" style={{
+            fontSize: '0.7em',
+            display:  'flex',
+            flexDirection: 'column',
+            gap: '0.5em',
+          }}>
             <p>Corro Electronico</p>
             <input type="text" placeholder="Ingresa tu Email"/>
-            <div>
-              <FaExclamationCircle/>
+            <div style={{display: 'flex', gap: '0.5em'}}>
+              <FaExclamationCircle
+                size='20px'
+                color='#00EFD8'
+              />
               <p>Todos los campos son obligatorios</p>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* OCTAVO CONTENIDO */}
       <div className="colorweb-content-eight">
